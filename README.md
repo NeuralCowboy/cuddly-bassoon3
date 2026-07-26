@@ -1,2 +1,16 @@
-# cuddly-bassoon3
-Intelligent CSV Analysis Agent built with LLMs and Python, capable of automated data cleaning, feature extraction, statistical analysis, anomaly detection, and insight generation from structured datasets.
+# 飞书贴图整合工具
+
+这是飞书贴图整合工具的清洁交付版。
+
+## 安全说明
+
+本仓库已清空以下本地配置，请使用者在自己的环境中重新填写：
+
+- API URL / API Key
+- 飞书 App ID / App Secret
+- 飞书多维表格 URL
+- 飞书云表格文件夹 token
+
+业务同事操作请看：`飞书贴图整合工具_小白操作手册.md`。
+技术交付说明请看：`飞书贴图整合工具_交付技术文档.md`。
+依赖说明请看：`飞书贴图整合工具_requirements文档.md`。
