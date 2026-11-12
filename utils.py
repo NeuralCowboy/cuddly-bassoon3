@@ -1,9 +1,6 @@
-from cmd import PROMPT
 import json
 from langchain_openai import ChatOpenAI
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
-import os
-from langchain_core.pydantic_v1 import BaseModel
 PROMPT_TEMPLATE = """
 你是一位数据分析助手，你的回应内容取决于用户的请求内容。
 
@@ -34,8 +31,7 @@ PROMPT_TEMPLATE = """
 
 def dataframe_agent(openai_api_key,df,query):
     model=ChatOpenAI(model="gpt-4o-mini",
-                     openai_api_key="sk-wlp1m8QPnAL41wAbqr7kXombEmc1mTr2K66yRBxQexgHmlk2",
-                     base_url="https://aigc789.top/v1",
+                     openai_api_key=openai_api_key,
                      temperature=0)
 
     agent=create_pandas_dataframe_agent(llm=model,
